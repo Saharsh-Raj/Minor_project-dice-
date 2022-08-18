@@ -1,7 +1,7 @@
 document.querySelector("button").addEventListener("click",DiceGAme);
 
-var audio1=new Audio("Audio/dicgameaudio.mpeg");
-audio1.play();
+// var audio1=new Audio("dicgameaudio.mpeg");
+// audio1.play();
 function DiceGAme(){
 var randomNumber1=Math.floor((Math.random()*6)+1);
 var randomNumber2=Math.floor((Math.random()*6)+1);
@@ -14,7 +14,7 @@ var image1= document.querySelectorAll("img")[0];
 image1.setAttribute("src", diceSource);
 var image2= document.querySelectorAll('img')[1];
 image2.setAttribute("src", diceSource2);
-var audio=new Audio("Audio/RollDice.mp3");
+var audio=new Audio("RollDice.mp3");
 audio.play("");
 if(randomNumber1>randomNumber2){
     document.querySelector("h1").innerHTML="Player 1 Win";
